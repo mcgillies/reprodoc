@@ -49,7 +49,7 @@ ggplot(penguins, aes(x = bill_length_mm,
 ```
 
 
-```{r penguins fig.cap = "Plot of Flipper Length and Bill Length, out.width = "60%", out.height = "60%"}
+```{r penguins, fig.cap = "Plot of Flipper Length and Bill Length, out.width = "60%", out.height = "60%"}
 knitr::include_graphics("../../results/penguins_plot.png")
 ```
 Figure \@ref(fig:penguins) shows a plot of flipper length vs bill length. This comes from @bashir2014ensemble
