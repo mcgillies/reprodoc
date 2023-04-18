@@ -16,10 +16,10 @@ jobs:
     
     - name: Install packages
       run: |
-        pip install docopt
-        pip install knitr
-        pip install tidyverse
-        pip install palmerpenguins
+        pip install -r docopt
+        pip install -r knitr
+        pip install -r tidyverse
+        pip install -r palmerpenguins
       
 
     - name: Render report
