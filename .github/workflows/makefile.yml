@@ -17,7 +17,6 @@ jobs:
     - name: Install packages
       run: |
         pip install docopt
-        pip install gridExtra
         pip install knitr
         pip install tidyverse
         pip install palmerpenguins
