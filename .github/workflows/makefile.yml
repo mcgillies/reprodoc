@@ -1,0 +1,33 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+    env: 
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: r-lib/actions/setup-r@v2
+    
+    - name: Install packages
+      run: |
+        pip install docopt
+        Rscript -e "install.packages("knitr", repos='http://cran.rstudio.org')"
+        Rscript -e "install.packages("tidyverse")"
+        Rscript -e "install.packages("palmerpenguins")"
+
+      
+
+    - name: Render report
+      run: make all
+
+
