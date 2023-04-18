@@ -30,6 +30,7 @@ source(here("R/predict.R"))
 kable(head(penguins), caption = "First 6 rows of the penguins dataset")
 ```
 The above table \@ref(tab:pengs) shows the first 5 rows of the dataset. The max flipper length is `r max(penguins$flipper_length_mm)`
+
 ## Data Wrangling
 ```{r}
 penguins <- penguins %>%
