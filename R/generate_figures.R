@@ -5,11 +5,7 @@ Options:
 --input_dir=<input_dir>		Path (including filename) to raw data
 --out_dir=<output_dir>		Path to directory where the results should be saved
 "
-install.packages("docopt")
-install.packages("gridExtra")
-install.packages("knitr")
-install.packages("tidyverse")
-install.packages("palmerpenguins")
+
 library(docopt)
 library(gridExtra)
 library(knitr)
