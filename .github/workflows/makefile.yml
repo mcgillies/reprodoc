@@ -20,7 +20,7 @@ jobs:
     
     - name: Install packages
       run: |
-        Rscript -e "install.packages("docopt")"
+        pip install docopt
         Rscript -e "install.packages("gridExtra")"
         Rscript -e "install.packages("knitr")"
         Rscript -e "install.packages("tidyverse")"
