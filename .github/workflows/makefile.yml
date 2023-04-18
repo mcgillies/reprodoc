@@ -16,10 +16,10 @@ jobs:
     
     - name: Install packages
       run: |
-        sudo apt-get install -y docopt
-        sudo apt-get install -y knitr
-        sudo apt-get install -y tidyverse
-        sudo apt-get install -y palmerpenguins
+        Rscript -e "install.packages('docopt')"
+        Rscript -e "install.packages('knitr')"
+        Rscript -e "install.packages('tidyverse')"
+        Rscript -e "install.packages('palmerpenguins')"
       
 
     - name: Render report
