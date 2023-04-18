@@ -14,11 +14,14 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: Install dependencies
-      uses: r-lib/actions/setup-r-dependencies@v2
-      with:
-          extra-packages: any::covr
-          needs: coverage
+    - name: Install packages
+      run: |
+        pip install docopt
+        pip install gridExtra
+        pip install knitr
+        pip install tidyverse
+        pip install palmerpenguins
+      
 
     - name: Render report
       run: make all
