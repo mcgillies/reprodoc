@@ -20,11 +20,11 @@ jobs:
     
     - name: Install packages
       run: |
-        Rscript -e "install.packages("docopt", repos="http://cran.us.r-project.org")"
-        Rscript -e "install.packages("gridExtra", repos="http://cran.us.r-project.org")"
-        Rscript -e "install.packages("knitr", repos="http://cran.us.r-project.org")"
-        Rscript -e "install.packages("tidyverse", repos="http://cran.us.r-project.org")"
-        Rscript -e "install.packages("palmerpenguins", repos="http://cran.us.r-project.org")"
+        Rscript -e "install.packages("docopt")"
+        Rscript -e "install.packages("gridExtra")"
+        Rscript -e "install.packages("knitr")"
+        Rscript -e "install.packages("tidyverse")"
+        Rscript -e "install.packages("palmerpenguins")"
 
       
 
