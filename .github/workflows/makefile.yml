@@ -20,6 +20,11 @@ jobs:
     - uses: r-lib/actions/setup-renv@v2
       with:
         profile: '"shiny"'
+      
+    - name: Activate and Install renv
+      run: |
+        Rscript -e "install.packages('renv')"
+        Rscript -e "renv::restore()"
     
 
       
